@@ -7,6 +7,10 @@ public class Caneta {
 	protected int carga;
 	protected boolean tampada;
 
+	public void Caneta() {
+		this.tampar();		
+	}
+
 	public void status() {
 		System.out.println("Uma caneta " + this.cor);
 		System.out.println("Está tampada " + this.tampada);
@@ -29,6 +33,38 @@ public class Caneta {
 
 	protected void destampar() {
 		this.tampada = false;
+	}
+
+	public String getModelo() {
+		return this.modelo;
+	}
+
+	public void setModelo(String modelo) {
+		this.modelo = modelo;
+	}
+
+	public String getCor() {
+		return this.cor;
+	}
+
+	public void setCor(String cor) {
+		this.cor = cor;
+	}
+
+	public float getPonta() {
+		return this.ponta;
+	}
+
+	public void setPonta(float ponta) {
+		this.ponta = ponta;
+	}
+
+	public int getCarga() {
+		return this.carga;
+	}
+
+	public void setCarga() {
+		this.carga = carga;
 	}
 
 	
