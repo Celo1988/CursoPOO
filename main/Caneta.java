@@ -7,6 +7,10 @@ public class Caneta {
 	protected int carga;
 	protected boolean tampada;
 
+	public void Caneta() {
+		this.tampar();		
+	}
+
 	public void status() {
 		System.out.println("Uma caneta " + this.cor);
 		System.out.println("Está tampada " + this.tampada);
